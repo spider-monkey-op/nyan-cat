@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+}
+:root {
+    --hoverColor: #000;
+    --backgroundColor: #000;
+    --mainColor: #000;
+    --secondaryColor: #000;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: rgb(66, 66, 66);
+    font-family: 'roboto', sans-serif;
+}
+body p {
+    color: white;
+}
+.header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    padding: 5px;
+    justify-content: space-between;
+    z-index: 4;
+}
+div.header p {
+    color: white;
+    font-size: 2em;
+}
+.header a {
+    display: flex;
+    text-decoration: none;
+    place-items: center;
+    transition-timing-function: linear;
+    transition-duration: 400ms;
+    border-radius: 100%;
+}
+.header a#logo:hover {
+    border-radius: 5px;
+}
+.header a#menu:hover {
+    border-radius: 5px;
+}
+#logo {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    background-color: wheat;
+}
+#menu {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    background-color: wheat;
+    margin-right: 10px;
+}
+.material-symbols-outlined {
+    color: #000000;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.break{
+    width: 100%;
+    height: 53px;
+}
+.comic {
+    width: 100%;
+    height: calc(100% - 53px);
+}
+img {
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 5px;
+}
+.imgone{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 70%;
+}
+.imgtwo {
+    width: calc(20% - 20px);
+    height: 20%;
+}
+.imgthree {
+    width: 70%;
+    height: 80%;
+}
+.imgfour {
+    width: calc(30% - 20px);
+    height: 80%
+}
+.imgfive {
+    width: calc(20% - 20px);
+    height: 49%;
+}
