@@ -69,39 +69,34 @@ div.header p {
 }
 .break{
     width: 100%;
-    height: 53px;
+    height: 48px;
 }
-.comic {
-    width: 100%;
-    height: calc(100% - 53px);
+section {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #929292;
+    min-height: 800px;
 }
-img {
-    float: left;
-    display: flex;
-    justify-content: space-around;
-    object-fit: cover;
-    border-radius: 20px;
-    padding: 5px;
+.hidden {
+    transform: translateX(-100%);
+    transition: all 1s ease-in;
+    opacity: 1;
 }
-.imgone{
+.show {
+    transform: translateX(0%);
+    opacity: 0;
+}
+#aniOne {
+    background-color: #929292;
+}
+.portal {
     display: flex;
     justify-content: center;
-    width: 80%;
-    height: 70%;
 }
-.imgtwo {
-    width: calc(20% - 20px);
-    height: 20%;
-}
-.imgthree {
-    width: 70%;
-    height: 80%;
-}
-.imgfour {
-    width: calc(30% - 20px);
-    height: 80%
-}
-.imgfive {
-    width: calc(20% - 20px);
-    height: 49%;
+.portal img#gifOne {
+    width: 50px;
+    position: absolute;
+    top: 325px;
+    left: 50;
 }
